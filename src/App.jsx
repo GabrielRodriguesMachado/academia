@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 import ChooseWorkout from './components/ChooseWorkout';
+import Workout from './components/Workout';
 import { treinoA, treinoB, treinoC } from './mocks/treinos';
 
 function App() {
@@ -41,39 +42,11 @@ function App() {
               handleTreinoC={handleTreinoC}
             />
           ) : (
-            <div>
-              <h1>{treino}</h1>
-              {treinoEscolhido.map((exercicio) => (
-                <div key={exercicio.id}>
-                  <p>{exercicio.nome}</p>
-                  <p>
-                    Séries:
-                    {' '}
-                    {exercicio.series}
-                  </p>
-                  <p>
-                    Repetições
-                    {' '}
-                    {exercicio.repeticoes}
-                  </p>
-                  <p>
-                    Carga:
-                    {' '}
-                    {exercicio.carga}
-                    kg
-                  </p>
-                  {/* <p className="text-gray-200 text-base">Realizado?</p>
-            <input type="checkbox" name="" id="" className="text-gray-700 text-base" /> */}
-                  <button
-                    onClick={() => handleRealizado(exercicio.id)}
-                    type="button"
-                  >
-                    Realizado
-                  </button>
-                  <hr />
-                </div>
-              ))}
-            </div>
+            <Workout
+              treino={treino}
+              treinoEscolhido={treinoEscolhido}
+              handleRealizado={handleRealizado}
+            />
           )
       }
     </div>

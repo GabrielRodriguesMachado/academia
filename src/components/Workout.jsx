@@ -8,14 +8,12 @@ function Workout({ treino, treinoEscolhido }) {
   return (
     <div className="text-center position-relative min-vh-100">
       <h1>{treino}</h1>
-      <div className="position-absolute top-50 start-50 translate-middle">
-
+      <div className="position-absolute top-50 start-50 translate-middle min-vw-100">
         <Carousel
           activeIndex={index}
           onSelect={handleSelect}
           interval={null}
-          indicators={false}
-          controls={false}
+          // indicators={false}
         >
           {treinoEscolhido.map((exercicio) => (
             <Carousel.Item key={exercicio.id}>
@@ -37,6 +35,20 @@ function Workout({ treino, treinoEscolhido }) {
                   {exercicio.carga}
                   kg
                 </p>
+                <label
+                  htmlFor="exercicioConcluido"
+                  className="form-check-label"
+                >
+                  <input
+                    type="checkbox"
+                    name="exercicioConcluido"
+                    className="form-check-input"
+                  />
+                  Exercicio concluido
+                </label>
+                <br />
+                <br />
+                <br />
               </div>
             </Carousel.Item>
           ))}

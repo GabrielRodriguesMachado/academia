@@ -32,7 +32,7 @@ function App() {
     setTreinoEscolhido(treinoAtualizado);
   }
   return (
-    <div className="">
+    <div className="container bg-dark text-light min-vw-100 min-vh-100">
       {
         treinoSelecionado
           ? (

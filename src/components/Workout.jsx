@@ -3,7 +3,7 @@ import React from 'react';
 
 function Workout({ treino, treinoEscolhido, handleRealizado }) {
   return (
-    <div>
+    <div className="text-center">
       <h1>{treino}</h1>
       {treinoEscolhido.map((exercicio) => (
         <div key={exercicio.id}>

@@ -133,7 +133,7 @@ export const treinoB = [
     nome: 'Hack',
     series: 3,
     repeticoes: 12,
-    carga: 20,
+    carga: 30,
   },
   {
     id: 8,
@@ -154,7 +154,7 @@ export const treinoB = [
     nome: 'Panturrilha Leg 180',
     series: 4,
     repeticoes: 15,
-    carga: 35,
+    carga: 40,
   },
 ];
 
@@ -185,21 +185,21 @@ export const treinoC = [
     nome: 'Puxada Anatomica Aberta',
     series: 3,
     repeticoes: 12,
-    carga: '?',
+    carga: 35,
   },
   {
     id: 5,
     nome: 'Puxada Inversa',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 30,
   },
   {
     id: 6,
     nome: 'Remada Articulada Aberta',
     series: 3,
     repeticoes: 12,
-    carga: '?',
+    carga: 10,
   },
   {
     id: 7,
@@ -213,14 +213,14 @@ export const treinoC = [
     nome: 'Rosca Martelo',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 6,
   },
   {
     id: 9,
     nome: 'Rosca Polia Barra',
     series: 3,
     repeticoes: 15,
-    carga: '?',
+    carga: 15,
   },
   {
     id: 10,
